@@ -8,10 +8,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
+    private final String url = "https://www.saucedemo.com/";
     protected WebDriver driver;
     protected BasePage basePage;
     protected LoginPage loginPage;
-    private final String url = "https://www.saucedemo.com/";
 
     @BeforeClass
     public void setUp() {
