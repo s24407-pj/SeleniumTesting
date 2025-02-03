@@ -1,4 +1,4 @@
-package pl.example.seleniumtesting;
+package orangehrm;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
