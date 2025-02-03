@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
+import static org.testng.Assert.assertEquals;
 
 public class OrangeHRMTest {
     WebDriver driver;
@@ -57,6 +58,6 @@ public class OrangeHRMTest {
         String result = header.getText();
         String expectedResult = "Dashboard";
 
-        Assert.assertEquals(result, expectedResult);
+        assertEquals(result, expectedResult);
     }
 }
