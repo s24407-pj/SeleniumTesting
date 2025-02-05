@@ -18,6 +18,6 @@ public class WebTableTest extends BaseTest {
 
         var result = webTablePage.getTableAge(email);
 
-        assertEquals(result, age,"Age does not match");
+        assertEquals(result, age, "Age does not match");
     }
 }

@@ -17,39 +17,39 @@ public class PracticeFormPage extends FormsPage {
         clickJS(femaleRadioButton);
     }
 
-    public boolean isFemaleSelected(){
+    public boolean isFemaleSelected() {
         return find(femaleRadioButton).isSelected();
     }
 
-    public void clickSportsHobbyCheckbox(){
-        if(!find(sportsHobbyCheckbox).isSelected()){
+    public void clickSportsHobbyCheckbox() {
+        if (!find(sportsHobbyCheckbox).isSelected()) {
             scrollToElementJS(sportsHobbyCheckbox);
             clickJS(sportsHobbyCheckbox);
         }
     }
 
-    public void clickReadingHobbyCheckbox(){
-        if(!find(readingHobbyCheckbox).isSelected()){
+    public void clickReadingHobbyCheckbox() {
+        if (!find(readingHobbyCheckbox).isSelected()) {
             scrollToElementJS(readingHobbyCheckbox);
             clickJS(readingHobbyCheckbox);
         }
     }
 
-    public void clickMusicHobbyCheckbox(){
-        if(!find(musicHobbyCheckbox).isSelected()){
+    public void clickMusicHobbyCheckbox() {
+        if (!find(musicHobbyCheckbox).isSelected()) {
             scrollToElementJS(musicHobbyCheckbox);
             clickJS(musicHobbyCheckbox);
         }
     }
 
-    public void unclickMusicHobbyCheckbox(){
-        if(find(musicHobbyCheckbox).isSelected()){
+    public void unclickMusicHobbyCheckbox() {
+        if (find(musicHobbyCheckbox).isSelected()) {
             scrollToElementJS(musicHobbyCheckbox);
             clickJS(musicHobbyCheckbox);
         }
     }
 
-    public boolean isMusicSelected(){
+    public boolean isMusicSelected() {
         return find(musicHobbyCheckbox).isSelected();
     }
 }

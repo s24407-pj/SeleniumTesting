@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
         return new FormsPage();
     }
 
-    public ElementsPage goToElements(){
+    public ElementsPage goToElements() {
         scrollToElementJS(elementsCard);
         click(elementsCard);
         return new ElementsPage();
