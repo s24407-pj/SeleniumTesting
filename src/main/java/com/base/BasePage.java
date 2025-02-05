@@ -25,4 +25,12 @@ public class BasePage {
     protected void click(By locator) {
         find(locator).click();
     }
+
+    protected void delay(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
