@@ -22,4 +22,8 @@ public class SwitchToUtility extends Utility {
     public static void dismissAlert() {
         switchTo().alert().dismiss();
     }
+
+    public static void switchToWindow(String handle) {
+        switchTo().window(handle);
+    }
 }
