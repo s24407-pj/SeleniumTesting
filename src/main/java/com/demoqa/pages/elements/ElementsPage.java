@@ -13,7 +13,7 @@ public class ElementsPage extends HomePage {
         return new WebTablesPage();
     }
 
-    public LinksPage clickLinks(){
+    public LinksPage clickLinks() {
         click(linksMenuItem);
         return new LinksPage();
     }

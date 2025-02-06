@@ -8,7 +8,7 @@ public class LinksPage extends ElementsPage {
     private final By badRequestLink = By.id("bad-request");
     private final By responseLink = By.id("linkResponse");
 
-    public void clickBadRequestLink(){
+    public void clickBadRequestLink() {
         scrollToElementJS(badRequestLink);
         click(badRequestLink);
     }
