@@ -1,7 +1,6 @@
 package com.demoqa.tests.alerts;
 
 import com.demoqa.base.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -27,6 +26,18 @@ public class AlertsTest extends BaseTest {
         String actualConfirmationResult = alertsPage.getConfirmationResult();
         String expectedConfirmationResult = "You selected Cancel";
 
-        Assert.assertEquals(actualConfirmationResult, expectedConfirmationResult);
+        assertEquals(actualConfirmationResult, expectedConfirmationResult);
+    }
+
+    public void testPromptAlert() {
+        String alertText = "Some text";
+        String expectedResult = "You entered " + alertText;
+        var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlerts();
+        alertsPage.clickPromptAlertButton();
+        setAlertText(alertText);
+        acceptAlert();
+        String actualResult = alertsPage.getPromptResult();
+
+        assertEquals(actualResult, expectedResult);
     }
 }
